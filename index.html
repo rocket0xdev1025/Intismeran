@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Intismeran — $VACCINE | Phase 3 Cleared. Shipping to the Masses.</title>
+  <meta name="description" content="Cancer vaccine Intismeran has passed Phase 3 and is now in the final steps to be shipped to the masses. $VACCINE on Solana." />
+  <meta property="og:title" content="Intismeran — $VACCINE" />
+  <meta property="og:description" content="Phase 3 passed. Final steps. Shipping to the masses. The cancer vaccine coin on Solana." />
+  <meta property="og:image" content="banner.png" />
+  <meta name="theme-color" content="#071422" />
+  <link rel="icon" href="logo.png" type="image/png" />
+  <link rel="preload" as="image" href="logo.png" />
+  <link rel="preload" as="image" href="banner.png" />
+  <link rel="preload" as="image" href="cursor.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            lab: {
+              bg: "#071422",
+              deep: "#050e1a",
+              navy: "#163a8c",
+              ink: "#1a3d94",
+              glove: "#2b8ce8",
+              cyan: "#4ec8f0",
+              ice: "#e8f4ff",
+              silver: "#c5d4e4",
+              go: "#22c55e",
+            },
+          },
+          fontFamily: {
+            display: ["Oswald", "sans-serif"],
+            sans: ["IBM Plex Sans", "sans-serif"],
+            mono: ["IBM Plex Mono", "ui-monospace", "monospace"],
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    :root {
+      --ca: "TBA";
+      --bg: #071422;
+      --navy: #163a8c;
+      --glove: #2b8ce8;
+      --cyan: #4ec8f0;
+      --go: #22c55e;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    html, body, a, button, input, [role="button"], * {
+      cursor: url("cursor.svg") 4 4, auto;
+    }
+
+    @media (hover: hover) and (pointer: fine) {
+      html, body, a, button, * { cursor: none !important; }
+    }
+
+    body {
+      font-family: "IBM Plex Sans", sans-serif;
+      background-color: #071422;
+      color: #e8f4ff;
+      overflow-x: hidden;
+    }
+
+    .bokeh-field {
+      position: fixed;
+      inset: 0;
+      z-index: 0;
+      pointer-events: none;
+      background:
+        radial-gradient(ellipse 70% 45% at 12% 18%, rgba(43, 140, 232, 0.28), transparent 58%),
+        radial-gradient(ellipse 55% 40% at 88% 12%, rgba(196, 90, 122, 0.18), transparent 52%),
+        radial-gradient(ellipse 50% 35% at 78% 78%, rgba(78, 200, 240, 0.14), transparent 55%),
+        radial-gradient(ellipse 60% 40% at 20% 88%, rgba(22, 58, 140, 0.35), transparent 60%),
+        linear-gradient(180deg, #071422 0%, #06101c 42%, #050e1a 100%);
+    }
+
+    .bokeh-orb {
+      position: absolute;
+      border-radius: 999px;
+      filter: blur(18px);
+      opacity: 0.55;
+      animation: drift 14s ease-in-out infinite;
+    }
+
+    @keyframes drift {
+      0%, 100% { transform: translate3d(0, 0, 0) scale(1); }
+      50% { transform: translate3d(18px, -22px, 0) scale(1.08); }
+    }
+
+    .content-layer { position: relative; z-index: 1; }
+
+    .glass {
+      background: rgba(7, 20, 34, 0.72);
+      backdrop-filter: blur(18px);
+      border: 1px solid rgba(78, 200, 240, 0.16);
+    }
+
+    .glass-strong {
+      background: linear-gradient(180deg, rgba(10, 28, 52, 0.88), rgba(7, 20, 34, 0.94));
+      backdrop-filter: blur(20px);
+      border: 1px solid rgba(43, 140, 232, 0.28);
+      box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.35),
+        inset 0 1px 0 rgba(232, 244, 255, 0.06);
+    }
+
+    .navy-bar {
+      background: linear-gradient(90deg, #163a8c, #2b8ce8);
+    }
+
+    .hero-title {
+      letter-spacing: 0.04em;
+      text-shadow:
+        0 0 24px rgba(43, 140, 232, 0.45),
+        0 6px 0 rgba(7, 20, 34, 0.4);
+    }
+
+    .ice-glow {
+      color: #e8f4ff;
+      text-shadow: 0 0 18px rgba(78, 200, 240, 0.45);
+    }
+
+    .btn-buy {
+      background: linear-gradient(180deg, #4ec8f0 0%, #2b8ce8 48%, #163a8c 100%);
+      color: #f4f9ff;
+      box-shadow:
+        0 0 0 1px rgba(232, 244, 255, 0.18),
+        0 10px 0 #0c2248,
+        0 16px 32px rgba(43, 140, 232, 0.35);
+      transition: transform 0.15s ease, box-shadow 0.15s ease, filter 0.15s ease;
+    }
+    .btn-buy:hover {
+      transform: translateY(-3px);
+      filter: brightness(1.08);
+      box-shadow:
+        0 0 0 1px rgba(232, 244, 255, 0.28),
+        0 13px 0 #0c2248,
+        0 22px 40px rgba(78, 200, 240, 0.4);
+    }
+    .btn-buy:active {
+      transform: translateY(4px);
+      box-shadow:
+        0 0 0 1px rgba(232, 244, 255, 0.18),
+        0 4px 0 #0c2248,
+        0 8px 16px rgba(43, 140, 232, 0.25);
+    }
+
+    .btn-chart {
+      background: linear-gradient(180deg, rgba(232, 244, 255, 0.08), rgba(22, 58, 140, 0.35));
+      color: #e8f4ff;
+      border: 1px solid rgba(78, 200, 240, 0.45);
+      box-shadow: 0 10px 0 #0a1830, 0 16px 28px rgba(0, 0, 0, 0.3);
+      transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+    }
+    .btn-chart:hover {
+      transform: translateY(-3px);
+      background: linear-gradient(180deg, rgba(78, 200, 240, 0.16), rgba(22, 58, 140, 0.5));
+      box-shadow: 0 13px 0 #0a1830, 0 22px 36px rgba(78, 200, 240, 0.18);
+    }
+    .btn-chart:active {
+      transform: translateY(4px);
+      box-shadow: 0 4px 0 #0a1830;
+    }
+
+    .ticker-track {
+      display: flex;
+      width: max-content;
+      animation: ticker 32s linear infinite;
+    }
+    @keyframes ticker {
+      from { transform: translateX(0); }
+      to { transform: translateX(-50%); }
+    }
+
+    .stamp {
+      border: 3px solid #22c55e;
+      color: #86efac;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      transform: rotate(-8deg);
+      box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.15), 0 0 24px rgba(34, 197, 94, 0.25);
+    }
+
+    .vial-glow {
+      animation: floatVial 5.5s ease-in-out infinite;
+      filter: drop-shadow(0 18px 30px rgba(43, 140, 232, 0.45));
+    }
+    @keyframes floatVial {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-12px); }
+    }
+
+    .pulse-ring {
+      animation: pulseRing 2.8s ease-out infinite;
+    }
+    @keyframes pulseRing {
+      0% { transform: scale(0.85); opacity: 0.55; }
+      100% { transform: scale(1.35); opacity: 0; }
+    }
+
+    .phase-dot.done {
+      background: #22c55e;
+      box-shadow: 0 0 0 4px rgba(34, 197, 94, 0.18), 0 0 16px rgba(34, 197, 94, 0.7);
+    }
+    .phase-dot.live {
+      background: #4ec8f0;
+      box-shadow: 0 0 0 4px rgba(78, 200, 240, 0.2), 0 0 18px rgba(78, 200, 240, 0.8);
+      animation: livePulse 1.6s ease-in-out infinite;
+    }
+    @keyframes livePulse {
+      0%, 100% { box-shadow: 0 0 0 4px rgba(78, 200, 240, 0.16), 0 0 12px rgba(78, 200, 240, 0.5); }
+      50% { box-shadow: 0 0 0 7px rgba(78, 200, 240, 0.08), 0 0 22px rgba(78, 200, 240, 0.95); }
+    }
+
+    .copy-toast {
+      opacity: 0;
+      transform: translateY(6px);
+      transition: all 0.28s ease;
+    }
+    .copy-toast.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .rx-num {
+      font-family: "Oswald", sans-serif;
+      background: linear-gradient(180deg, #4ec8f0, #163a8c);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .dna {
+      position: absolute;
+      width: 2px;
+      background: linear-gradient(180deg, transparent, rgba(78, 200, 240, 0.5), transparent);
+    }
+
+    #inject-cursor {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 42px;
+      height: 42px;
+      margin-left: -6px;
+      margin-top: -6px;
+      pointer-events: none;
+      z-index: 99999;
+      will-change: transform;
+      opacity: 0;
+      font-size: 34px;
+      line-height: 1;
+      filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.45));
+      user-select: none;
+    }
+    body.cursor-on #inject-cursor { opacity: 1; }
+    body.cursor-on #inject-cursor.hidden { opacity: 0; }
+
+    .scanline {
+      pointer-events: none;
+      position: fixed;
+      inset: 0;
+      z-index: 60;
+      background: repeating-linear-gradient(
+        to bottom,
+        transparent 0,
+        transparent 3px,
+        rgba(7, 20, 34, 0.08) 4px
+      );
+      mix-blend-mode: multiply;
+    }
+
+    #dexscreener-embed {
+      position: relative;
+      width: 100%;
+      padding-bottom: 125%;
+    }
+    @media (min-width: 1400px) {
+      #dexscreener-embed { padding-bottom: 65%; }
+    }
+    #dexscreener-embed iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    .banner-frame {
+      box-shadow:
+        0 0 0 1px rgba(78, 200, 240, 0.28),
+        0 24px 60px rgba(0, 0, 0, 0.45),
+        0 0 80px rgba(43, 140, 232, 0.18);
+    }
+  </style>
+</head>
+<body class="min-h-screen antialiased">
+  <div class="bokeh-field" aria-hidden="true">
+    <span class="bokeh-orb" style="width:180px;height:180px;left:8%;top:22%;background:#2b8ce8;"></span>
+    <span class="bokeh-orb" style="width:120px;height:120px;right:12%;top:16%;background:#c45a7a;animation-delay:-4s;"></span>
+    <span class="bokeh-orb" style="width:220px;height:220px;right:18%;bottom:10%;background:#4ec8f0;animation-delay:-7s;"></span>
+    <span class="bokeh-orb" style="width:90px;height:90px;left:30%;bottom:18%;background:#163a8c;animation-delay:-2s;"></span>
+  </div>
+  <div class="scanline" aria-hidden="true"></div>
+
+  <div id="inject-cursor" aria-hidden="true">💉</div>
+
+  <div class="content-layer">
+    <!-- NAV -->
+    <nav class="sticky top-0 z-50 glass border-b border-lab-cyan/15">
+      <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between gap-3">
+        <a href="#top" class="flex items-center gap-3 group">
+          <img src="logo.png" alt="Intismeran logo" class="h-12 w-12 rounded-full object-cover ring-2 ring-lab-glove/70 group-hover:ring-lab-cyan transition" />
+          <div>
+            <p class="font-display text-xl tracking-[0.14em] leading-none">INTISMERAN</p>
+            <p class="text-[11px] tracking-[0.28em] text-lab-cyan font-semibold">$VACCINE</p>
+          </div>
+        </a>
+        <div class="hidden md:flex items-center gap-6 text-sm font-semibold tracking-wide uppercase text-lab-ice/80">
+          <a href="#about" class="hover:text-lab-cyan transition">About</a>
+          <a href="#how-to-buy" class="hover:text-lab-cyan transition">How to Buy</a>
+          <a href="#chart" class="hover:text-lab-cyan transition">Chart</a>
+        </div>
+        <div class="flex items-center gap-2 sm:gap-3">
+          <a href="https://t.me/IntismeranSol" target="_blank" rel="noopener noreferrer" class="hover:scale-110 transition" aria-label="Telegram">
+            <img src="tg.png" alt="Telegram" class="h-9 w-9 rounded-full" />
+          </a>
+          <a href="https://x.com/IntismeranSolX" target="_blank" rel="noopener noreferrer" class="bg-black rounded-lg p-1.5 hover:scale-110 transition" aria-label="X / Twitter">
+            <img src="x.png" alt="X" class="h-6 w-6" />
+          </a>
+          <a href="https://swap.pump.fun/?input=So11111111111111111111111111111111111111112&output=TBA" target="_blank" rel="noopener noreferrer" class="hidden sm:inline-flex btn-buy px-4 py-2 rounded-lg font-display tracking-wider text-sm">
+            BUY NOW
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- TICKER -->
+    <div class="navy-bar overflow-hidden border-y border-white/10">
+      <div class="ticker-track py-2 text-[11px] sm:text-xs font-semibold tracking-[0.22em] uppercase text-white">
+        <span class="px-6">Cancer vaccine “Intismeran” has passed Phase 3 and is now in the final steps to be shipped to the masses</span>
+        <span class="px-6 text-lab-cyan">● $VACCINE ON SOLANA</span>
+        <span class="px-6">Phase 1 cleared ● Phase 2 cleared ● Phase 3 passed ● Shipping</span>
+        <span class="px-6 text-lab-go">● DOSE THE CHART</span>
+        <span class="px-6">Cancer vaccine “Intismeran” has passed Phase 3 and is now in the final steps to be shipped to the masses</span>
+        <span class="px-6 text-lab-cyan">● $VACCINE ON SOLANA</span>
+        <span class="px-6">Phase 1 cleared ● Phase 2 cleared ● Phase 3 passed ● Shipping</span>
+        <span class="px-6 text-lab-go">● DOSE THE CHART</span>
+      </div>
+    </div>
+
+    <!-- HERO -->
+    <header id="top" class="relative overflow-hidden">
+      <div class="max-w-6xl mx-auto px-4 pt-10 pb-16">
+        <div class="grid lg:grid-cols-[1.15fr_0.85fr] gap-10 items-center">
+          <div>
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full glass text-[11px] font-bold tracking-[0.2em] uppercase text-lab-go mb-5">
+              <span class="h-2 w-2 rounded-full bg-lab-go animate-pulse"></span>
+              Phase 3 passed · final shipment
+            </div>
+            <h1 class="font-display hero-title text-6xl sm:text-7xl lg:text-8xl leading-[0.9] mb-3">
+              INTISMERAN
+            </h1>
+            <p class="font-display text-3xl sm:text-4xl tracking-[0.18em] text-lab-glove mb-5">$VACCINE</p>
+            <p class="text-lg sm:text-xl text-lab-ice/90 leading-relaxed max-w-xl mb-6">
+              Cancer vaccine <span class="text-white font-semibold">“Intismeran”</span> has passed
+              <span class="text-lab-go font-semibold">Phase 3</span> and is now in the final steps
+              to be <span class="text-lab-cyan font-semibold">shipped to the masses</span>.
+            </p>
+            <p class="text-sm sm:text-base text-lab-silver/80 leading-relaxed max-w-xl mb-8">
+              Personalized mRNA. Lab-grown narrative. Solana distribution.
+              The vial is labeled. The dose is $VACCINE. Get in before the trucks leave the dock.
+            </p>
+
+            <div class="glass-strong rounded-2xl p-4 mb-6">
+              <p class="text-[11px] uppercase tracking-[0.24em] text-lab-cyan font-semibold mb-2">Contract Address</p>
+              <div class="flex items-center gap-3 flex-wrap">
+                <code id="ca" class="font-mono text-lab-ice text-sm sm:text-base break-all">TBA</code>
+                <button type="button" onclick="copyCA()" class="inline-flex items-center gap-2 px-3 py-2 rounded-lg bg-lab-navy hover:bg-lab-ink border border-lab-glove/40 text-xs font-bold tracking-wider uppercase transition">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                  </svg>
+                  Copy CA
+                </button>
+              </div>
+              <p id="copy-toast" class="copy-toast text-sm text-lab-go mt-2 font-semibold">Copied. You’re cleared for dosing.</p>
+            </div>
+
+            <div class="flex flex-col sm:flex-row gap-4">
+              <a
+                href="https://swap.pump.fun/?input=So11111111111111111111111111111111111111112&output=TBA"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn-buy px-8 py-4 rounded-xl font-display text-2xl tracking-[0.16em] text-center"
+              >
+                BUY NOW
+              </a>
+              <a
+                href="https://dexscreener.com/solana/TBA"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn-chart px-8 py-4 rounded-xl font-display text-2xl tracking-[0.16em] text-center"
+              >
+                CHART
+              </a>
+            </div>
+          </div>
+
+          <div class="relative flex justify-center">
+            <div class="absolute inset-8 rounded-full bg-lab-glove/20 blur-3xl"></div>
+            <div class="absolute inset-12 rounded-full border border-lab-cyan/20 pulse-ring"></div>
+            <div class="absolute inset-4 rounded-full border border-lab-navy/40 pulse-ring" style="animation-delay:.8s"></div>
+            <img src="logo.png" alt="Intismeran vaccine vial" class="relative vial-glow w-64 sm:w-80 rounded-[2rem] object-cover ring-2 ring-lab-glove/50" />
+            <div class="stamp absolute -right-1 top-6 sm:right-2 px-3 py-2 text-[10px] sm:text-xs font-bold">
+              Phase 3<br />Cleared
+            </div>
+          </div>
+        </div>
+
+        <div class="relative mt-12 banner-frame rounded-2xl overflow-hidden">
+          <img src="banner.png" alt="Intismeran banner" class="w-full h-auto block" />
+        </div>
+      </div>
+    </header>
+
+    <!-- PIPELINE -->
+    <section class="max-w-6xl mx-auto px-4 pb-16">
+      <div class="glass-strong rounded-2xl p-6 sm:p-8">
+        <p class="text-[11px] uppercase tracking-[0.28em] text-lab-cyan font-semibold mb-6">Clinical pipeline · now shipping</p>
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-5">
+          <div>
+            <div class="flex items-center gap-2 mb-2">
+              <span class="phase-dot done h-3 w-3 rounded-full"></span>
+              <p class="font-display text-xl tracking-wider">PHASE 1</p>
+            </div>
+            <p class="text-sm text-lab-silver/80">Safety cleared. The vial got a name.</p>
+          </div>
+          <div>
+            <div class="flex items-center gap-2 mb-2">
+              <span class="phase-dot done h-3 w-3 rounded-full"></span>
+              <p class="font-display text-xl tracking-wider">PHASE 2</p>
+            </div>
+            <p class="text-sm text-lab-silver/80">49% less recurrence. The data printed.</p>
+          </div>
+          <div>
+            <div class="flex items-center gap-2 mb-2">
+              <span class="phase-dot done h-3 w-3 rounded-full"></span>
+              <p class="font-display text-xl tracking-wider">PHASE 3</p>
+            </div>
+            <p class="text-sm text-lab-silver/80">Passed. Stamped. Ready for the floor.</p>
+          </div>
+          <div>
+            <div class="flex items-center gap-2 mb-2">
+              <span class="phase-dot live h-3 w-3 rounded-full"></span>
+              <p class="font-display text-xl tracking-wider text-lab-cyan">SHIPPING</p>
+            </div>
+            <p class="text-sm text-lab-silver/80">Final steps. $VACCINE to the masses.</p>
+          </div>
+        </div>
+        <div class="mt-6 h-2 rounded-full bg-white/5 overflow-hidden">
+          <div class="h-full w-[92%] rounded-full bg-gradient-to-r from-lab-navy via-lab-glove to-lab-go"></div>
+        </div>
+        <p class="mt-2 text-right text-[11px] tracking-widest uppercase text-lab-silver/70">92% to mass distribution</p>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="max-w-6xl mx-auto px-4 pb-16">
+      <div class="grid lg:grid-cols-2 gap-8 items-stretch">
+        <div class="glass-strong rounded-2xl p-7">
+          <p class="text-[11px] uppercase tracking-[0.28em] text-lab-cyan font-semibold mb-3">The briefing</p>
+          <h2 class="font-display text-4xl sm:text-5xl tracking-wide mb-4">A cancer vaccine, now a Solana dose.</h2>
+          <p class="text-lab-ice/85 leading-relaxed mb-4">
+            Intismeran is a personalized mRNA cancer vaccine — the kind of headline that makes markets sit up.
+            Phase 3 is done. The last mile is distribution. On-chain, that last mile is
+            <span class="text-white font-semibold">$VACCINE</span>.
+          </p>
+          <p class="text-lab-silver/85 leading-relaxed mb-4">
+            Real-world readouts talked 49% lower recurrence risk, 59% less distant spread, and 92.2% overall survival
+            in the combo data the labs keep reprinting. The meme is simple:
+            <span class="text-lab-cyan font-semibold">if it ships to the masses, you want a bag before the dock clears.</span>
+          </p>
+          <p class="text-lab-silver/80 leading-relaxed">
+            No whitepaper novel. No twelve-step roadmap. One vial. One ticker. One job — get $VACCINE into circulation
+            while the world is still saying the name out loud.
+          </p>
+        </div>
+        <div class="grid grid-cols-2 gap-4">
+          <div class="glass-strong rounded-2xl p-5 flex flex-col justify-between">
+            <p class="text-[11px] uppercase tracking-[0.2em] text-lab-cyan">Recurrence risk</p>
+            <p class="font-display text-5xl text-lab-ice">49%</p>
+            <p class="text-sm text-lab-silver/75">reduction in the printed combo data</p>
+          </div>
+          <div class="glass-strong rounded-2xl p-5 flex flex-col justify-between">
+            <p class="text-[11px] uppercase tracking-[0.2em] text-lab-cyan">Metastasis</p>
+            <p class="font-display text-5xl text-lab-glove">59%</p>
+            <p class="text-sm text-lab-silver/75">less distant spread reported</p>
+          </div>
+          <div class="glass-strong rounded-2xl p-5 flex flex-col justify-between">
+            <p class="text-[11px] uppercase tracking-[0.2em] text-lab-cyan">Overall survival</p>
+            <p class="font-display text-5xl text-lab-go">92.2%</p>
+            <p class="text-sm text-lab-silver/75">combo arm, five-year follow-up</p>
+          </div>
+          <div class="glass-strong rounded-2xl p-5 flex flex-col justify-between">
+            <p class="text-[11px] uppercase tracking-[0.2em] text-lab-cyan">Status</p>
+            <p class="font-display text-4xl text-lab-ice">FINAL</p>
+            <p class="text-sm text-lab-silver/75">steps before mass shipment</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW TO BUY -->
+    <section id="how-to-buy" class="max-w-6xl mx-auto px-4 pb-16">
+      <div class="text-center mb-10">
+        <p class="text-[11px] uppercase tracking-[0.28em] text-lab-cyan font-semibold mb-2">Patient protocol</p>
+        <h2 class="font-display text-4xl sm:text-6xl tracking-wide">How to Buy $VACCINE</h2>
+        <p class="mt-3 text-lab-silver/80 max-w-2xl mx-auto">Four steps. Solana only. Same as filling a prescription — except the pharmacy is a DEX.</p>
+      </div>
+      <div class="grid md:grid-cols-2 gap-5">
+        <article class="glass-strong rounded-2xl p-6">
+          <div class="flex items-start gap-4">
+            <span class="rx-num text-5xl leading-none">01</span>
+            <div>
+              <h3 class="font-display text-2xl tracking-wide mb-2">Get a Solana wallet</h3>
+              <p class="text-lab-silver/85 leading-relaxed">
+                Install <span class="text-white font-semibold">Phantom</span> or <span class="text-white font-semibold">Solflare</span>
+                on mobile or browser. Create a wallet, write down the seed, and lock it. This is your clinic badge.
+              </p>
+            </div>
+          </div>
+        </article>
+        <article class="glass-strong rounded-2xl p-6">
+          <div class="flex items-start gap-4">
+            <span class="rx-num text-5xl leading-none">02</span>
+            <div>
+              <h3 class="font-display text-2xl tracking-wide mb-2">Load SOL</h3>
+              <p class="text-lab-silver/85 leading-relaxed">
+                Buy SOL on any major exchange and send it to your wallet address. Keep a little extra for network fees
+                so the swap doesn’t stall at the last click.
+              </p>
+            </div>
+          </div>
+        </article>
+        <article class="glass-strong rounded-2xl p-6">
+          <div class="flex items-start gap-4">
+            <span class="rx-num text-5xl leading-none">03</span>
+            <div>
+              <h3 class="font-display text-2xl tracking-wide mb-2">Open the lab door</h3>
+              <p class="text-lab-silver/85 leading-relaxed">
+                Hit <span class="text-white font-semibold">Buy Now</span> to open Pump.fun swap with SOL already selected
+                as input. Connect the wallet you just funded. Confirm you’re on Solana.
+              </p>
+            </div>
+          </div>
+        </article>
+        <article class="glass-strong rounded-2xl p-6">
+          <div class="flex items-start gap-4">
+            <span class="rx-num text-5xl leading-none">04</span>
+            <div>
+              <h3 class="font-display text-2xl tracking-wide mb-2">Swap SOL for $VACCINE</h3>
+              <p class="text-lab-silver/85 leading-relaxed">
+                Paste the contract (use <span class="text-white font-semibold">Copy CA</span>), set your size, and confirm.
+                That’s the dose. Chart it after if you want to watch the shipment move.
+              </p>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a
+          href="https://swap.pump.fun/?input=So11111111111111111111111111111111111111112&output=TBA"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn-buy px-8 py-4 rounded-xl font-display text-2xl tracking-[0.16em] w-full sm:w-auto text-center"
+        >
+          BUY NOW
+        </a>
+        <button type="button" onclick="copyCA()" class="btn-chart px-8 py-4 rounded-xl font-display text-2xl tracking-[0.16em] w-full sm:w-auto">
+          COPY CA
+        </button>
+      </div>
+    </section>
+
+    <!-- CHART -->
+    <section id="chart" class="max-w-6xl mx-auto px-4 pb-16">
+      <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-6">
+        <div>
+          <p class="text-[11px] uppercase tracking-[0.28em] text-lab-cyan font-semibold mb-2">Live readout</p>
+          <h2 class="font-display text-4xl sm:text-5xl tracking-wide">Dexscreener</h2>
+        </div>
+        <a
+          href="https://dexscreener.com/solana/TBA"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn-chart px-6 py-3 rounded-xl font-display tracking-[0.16em] text-center"
+        >
+          OPEN CHART
+        </a>
+      </div>
+      <div class="glass-strong rounded-2xl p-2 sm:p-3 overflow-hidden">
+        <div id="dexscreener-embed">
+          <iframe
+            title="Dexscreener chart for $VACCINE"
+            src="https://dexscreener.com/solana/TBA?embed=1&loadChartSettings=0&trades=0&tabs=0&info=0&chartLeftToolbar=0&chartTheme=dark&theme=dark&chartStyle=0&chartType=usd&interval=15"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="border-t border-lab-cyan/15">
+      <div class="max-w-6xl mx-auto px-4 py-10 flex flex-col md:flex-row items-center justify-between gap-6">
+        <div class="flex items-center gap-3">
+          <img src="logo.png" alt="" class="h-10 w-10 rounded-full object-cover ring-1 ring-lab-glove/60" />
+          <div>
+            <p class="font-display tracking-[0.16em]">INTISMERAN · $VACCINE</p>
+            <p class="text-xs text-lab-silver/70">Phase 3 passed. Shipping to the masses.</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-3">
+          <a href="https://t.me/IntismeranSol" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
+            <img src="tg.png" alt="Telegram" class="h-9 w-9 rounded-full hover:scale-110 transition" />
+          </a>
+          <a href="https://x.com/IntismeranSolX" target="_blank" rel="noopener noreferrer" class="bg-black rounded-lg p-1.5 hover:scale-110 transition" aria-label="X / Twitter">
+            <img src="x.png" alt="X" class="h-6 w-6" />
+          </a>
+        </div>
+      </div>
+      <p class="text-center text-[11px] text-lab-silver/50 px-4 pb-8 max-w-3xl mx-auto">
+        $VACCINE is a Solana meme coin inspired by the Intismeran news cycle. Not medical advice, not a real vaccine, not financial advice. DYOR.
+      </p>
+    </footer>
+  </div>
+
+  <script>
+    const CA = "TBA";
+
+    function copyCA() {
+      const done = function () {
+        const toast = document.getElementById("copy-toast");
+        if (!toast) return;
+        toast.classList.add("show");
+        window.setTimeout(function () { toast.classList.remove("show"); }, 2200);
+      };
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(CA).then(done).catch(fallbackCopy);
+      } else {
+        fallbackCopy();
+      }
+      function fallbackCopy() {
+        const area = document.createElement("textarea");
+        area.value = CA;
+        area.setAttribute("readonly", "");
+        area.style.position = "fixed";
+        area.style.left = "-9999px";
+        document.body.appendChild(area);
+        area.select();
+        try { document.execCommand("copy"); } catch (e) {}
+        document.body.removeChild(area);
+        done();
+      }
+    }
+
+    (function injectionCursor() {
+      const fine = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
+      if (!fine) return;
+      const el = document.getElementById("inject-cursor");
+      if (!el) return;
+      document.body.classList.add("cursor-on");
+      let x = window.innerWidth / 2;
+      let y = window.innerHeight / 2;
+      let tx = x;
+      let ty = y;
+      window.addEventListener("mousemove", function (e) {
+        tx = e.clientX;
+        ty = e.clientY;
+        el.classList.remove("hidden");
+      });
+      window.addEventListener("mouseleave", function () { el.classList.add("hidden"); });
+      document.addEventListener("mouseout", function (e) {
+        if (!e.relatedTarget && !e.toElement) el.classList.add("hidden");
+      });
+      function tick() {
+        x += (tx - x) * 0.42;
+        y += (ty - y) * 0.42;
+        el.style.transform = "translate3d(" + x + "px," + y + "px,0)";
+        requestAnimationFrame(tick);
+      }
+      tick();
+    })();
+  </script>
+</body>
+</html>
